@@ -9,7 +9,7 @@ USER $NB_USER
 WORKDIR $HOME
 
 # Install workshop deps
-RUN mamba install -c acellera -c conda-forge ambertools htmd matplotlib mdtraj nglview numpy=2.3.5 -y
+RUN mamba install -c acellera -c conda-forge ambertools htmd=2.5.7 matplotlib mdtraj nglview numpy=2.3.5 -y
 
 # Get workshop files and move them to jovyan directory.
 COPY --chown=1000:100 . .
