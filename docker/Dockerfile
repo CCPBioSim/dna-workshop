@@ -9,6 +9,7 @@ USER $NB_USER
 WORKDIR $HOME
 
 # Install workshop deps
+RUN pip install openbabel-wheel
 RUN mamba install -c acellera -c conda-forge ambertools htmd=2.5.8 matplotlib mdtraj nglview numpy=2.3.5 -y
 
 # Get workshop files and move them to jovyan directory.
