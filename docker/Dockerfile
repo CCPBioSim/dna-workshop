@@ -9,7 +9,6 @@ USER $NB_USER
 WORKDIR $HOME
 
 # Install workshop deps
-#RUN conda install -c acellera -c conda-forge ambertools htmd=2.5.7 matplotlib mdtraj nglview numpy=2.3.5 -y
 RUN conda install -y -c conda-forge -c acellera \
     conda-forge::matplotlib=3.11.2 \
     conda-forge::mdtraj=1.11.1 \
