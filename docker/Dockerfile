@@ -11,7 +11,7 @@ WORKDIR $HOME
 # Install workshop deps
 RUN conda install -y -c conda-forge -c acellera \
     conda-forge::matplotlib=3.11.2 \
-    conda-forge::mdtraj=1.11.1 \
+    conda-forge::mdtraj=1.11.2 \
     conda-forge::numpy=2.5.3 \
     conda-forge::ambertools=24.8 \
     conda-forge::nglview=4.0.1 \
